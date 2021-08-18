@@ -10,11 +10,12 @@ class Question
   end
 
   def checkAnswer
+    print "> "
     answer = gets.chomp
     if answer.to_i == @sum 
-      puts "correct"
+      return true
     else
-      puts "wrong"
+      return false
     end
   end
 end
